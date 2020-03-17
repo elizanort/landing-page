@@ -114,11 +114,11 @@ a {
 }
 .features_container .features__img-container .features__img {
   width: 100%;
-  margin: 5rem 0.9375rem 15rem 0.9375rem;
+  padding: 5rem 0.9375rem 15rem 0.9375rem;
 }
 
 .integration_container {
-  margin: 5rem 0.9375rem 15rem 0.9375rem;
+  padding: 5rem 0.9375rem 15rem 0.9375rem;
 }
 .integration_container .integration-container__h1 {
   font-size: 1.5rem;
@@ -136,7 +136,7 @@ a {
 }
 .integration_container .integration-container__img .integrationimg {
   width: 100%;
-  margin: 1rem 0rem;
+  padding: 1rem 0rem;
 }
 .integration_container .integration-container__img .integration_img1 {
   grid-area: img1;

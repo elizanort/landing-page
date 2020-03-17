@@ -179,13 +179,13 @@ a{
         display: flex;
         .features__img{
             width: 100%;
-            margin: 5rem .9375rem 15rem .9375rem;
+            padding: 5rem .9375rem 15rem .9375rem;
         }
     }
 }
 
 .integration_container{
-    margin: 5rem .9375rem 15rem .9375rem;
+    padding: 5rem .9375rem 15rem .9375rem;
     .integration-container__h1{
         @include headertext();
         @include color-gradient();
@@ -199,7 +199,7 @@ a{
         ". img3 .";
         .integrationimg{
             width: 100%;
-            margin: 1rem 0rem;
+            padding: 1rem 0rem;
         }
         .integration_img1{
             grid-area: img1;
