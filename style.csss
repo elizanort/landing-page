@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero_container {
+  width: 100%;
+}
+
+.features_container {
+  width: 100%;
+}
+
+.integration_container {
+  width: 100%;
+}
+
+.footer_container {
+  width: 100%;
+}
+
+.hero_container .nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8125rem 0.9375rem;
+}
+.hero_container .nav_container .logo {
+  width: 10rem;
+}
+.hero_container .nav_container .hamburger {
+  width: 2.3125rem;
+  height: 0.75rem;
+}
+.hero_container .hero_container__background {
+  width: 100%;
+}
+.hero_container .hero_container__background img {
+  width: 100%;
+  z-index: 0;
+  height: 60vh;
+}
+.hero_container .hero_container__card {
+  width: 100%;
+  position: absolute;
+  top: 15rem;
+  margin: auto;
+}
+.hero_container .hero_container__card img {
+  z-index: 10;
+}
+
+/*# sourceMappingURL=style.csss.map */

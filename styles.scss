@@ -1,0 +1,100 @@
+// Base Styles
+$fontcolor-primary: #393939;
+$fontcolor-secondary: #FFFFFF;
+$fontcolor-tertiary: #F1F1F1:
+// $color-gradient: linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%);
+$color-gradient: #AB00FF;
+
+@mixin hero__textprimary-mobile{
+    color: $fontcolor-primary;
+    font-size: 1.5rem;
+    letter-spacing: .03125rem;
+    line-height: 2rem;
+}
+
+@mixin features__text-mobile{
+    color: $fontcolor-gradient;
+    font-size: 1.5rem;
+    letter-spacing: .03125rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin featurescard__text-mobile {
+    color: $fontcolor-primary;
+    font-size: 1.0625rem;
+    letter-spacing: .0279605625rem;
+    line-height: 1.5rem;
+}
+
+@mixin integration__text-mobile{
+    color: $fontcolor-gradient;
+    font-size: 1.5rem;
+    letter-spacing: .03125rem;
+    display: flex;
+    align-items: center;
+}
+
+@mixin formheader__text-mobile {
+    color: $fontcolor-secondary;
+    font-size: 1.5rem;
+    letter-spacing: .03125rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin form__text-mobile{
+    color: $fontcolor-secondary;
+    font-size: .75rem;
+    line-height: 1rem;
+    line-height: .0220588125rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin form__button-mobile {
+    color: $fontcolor-gradient;
+    tex
+    
+}
+
+@mixin footer__font-mobile{
+    color: $fontcolor-tertiary;
+    font-size: .625rem;
+    text-transform: capitalize;
+}
+
+@mixin hero__fontprimary-web{
+    font-size: 3rem;
+    color: $fontcolor-primary;
+}
+
+@mixin hero__fontsecondary-web{
+    font-size: 0.9375rem;
+    // change to 1rem if 16px is ok
+    color: $fontcolor-primary;
+    text-transform: capitalize;
+}
+
+@mixin features__font-web{
+    font-size: 3rem;
+    color: $fontcolor-gradient;
+}
+
+@mixin integrations__font-web{
+    font-size: 3rem;
+    color: $fontcolor-gradient;
+}
+
+@mixin footer__font-web{
+    font-size: .9375rem;
+    color: $fontcolor-tertiary;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
