@@ -7,29 +7,36 @@
     <title>Zenith</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <section class="hero_container">
-      <div class="nav_container">
+    <section class="nav_container">
+      <div class="nav-left">
         <img
           src="./images/hero/zenith-logo.png"
           class="logo"
           alt="Zenith's logo."
         />
-        <img src="./images/hero/hamburger.png" class="hamburger" alt="" />
       </div>
-
-      <div class="hero_container__background">
+      <div class="nav-right">
+        <a href="#features" class="features__link dsk">FEATURES</a>
+        <a href="#integrations" class="integration__link dsk">INTEGRATIONS</a>
+        <a href="#" class="cta__button dsk"
+          ><span class="cta__text">Get Zenith</span>
+        </a>
         <img
-          src="./images/backgrounds/hero-bg-texture.png"
-          class="hero__background"
-          alt="Lines that are purple to blue gradient."
+          src="./images/hero/hamburger.png"
+          class="mobile hamburger"
+          alt=""
         />
       </div>
-
+    </section>
+    
+    <section class="hero_container">
       <div class="hero__h1">
-          <h1>All your communication.</h1>
-          <h1>One place.</h1>
+        <h1>All your communication.</h1>
+        <h1>One place.</h1>
       </div>
+
       <div class="hero_container__card">
         <img
           src="./images/hero/inbound-card.png"
@@ -39,7 +46,7 @@
       </div>
     </section>
 
-    <section class="features_container">
+    <section class="features_container" id="features">
       <h1 class="features__h1">The features that matter</h1>
 
       <div class="features__card card1">
@@ -83,7 +90,7 @@
       </div>
     </section>
 
-    <section class="integration_container">
+    <section class="integration_container" id="integrations">
       <h1 class="integration-container__h1">
         Your favorite products finally together
       </h1>
@@ -119,25 +126,27 @@
     <footer class="footer_container">
       <h1 class="footer__h1">Stay up to date</h1>
       <form action="" class="footer__form">
-        <input type="email" placeholder="Email address" />
-        <button type="submit" class="footer__button">DOWNLOAD</button>
+        <input type="email" placeholder="Email address" class="footer__email" />
+        <button type="submit" class="footer__submit">
+          <span class="submit__text">DOWNLOAD</span>
+        </button>
       </form>
+
       <div class="footerlinks-container">
         <a href="#" class="footer__link">CONTACT</a>
         <a href="#" class="footer__link">OUR TEAM</a>
         <a href="#" class="footer__link">POLICIES</a>
         <a href="#" class="footer__link">PRIVACY & TERMS</a>
       </div>
-      <div>
-      <img
-        src="./images/backgrounds/footer-bg-texture.png"
-        class="footer__background"
-        alt=""
-        srcset=""
-      />
-        </div>
+
+      <div class="footerbackground-container">
+        <img
+          src="./images/backgrounds/footer-bg-texture.png"
+          class="footer__background"
+          alt=""
+          srcset=""
+        />
+      </div>
     </footer>
-  </body>
-</html>
   </body>
 </html>

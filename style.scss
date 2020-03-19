@@ -2,15 +2,15 @@
 $fontcolor-primary: #393939;
 $fontcolor-secondary: #FFFFFF;
 $fontcolor-tertiary: #F1F1F1;
-
 $color-gradient: linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%);
-// $color-gradient: #AB00FF;
+
 
 @mixin color-gradient{
 background: -webkit-linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
 @mixin headertext{
     font-size: 1.5rem;
     letter-spacing: .03125rem;
@@ -37,8 +37,9 @@ background: -webkit-linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%)
 }
 
 @mixin headertext-dt {
-    font-size: 3rem;
-    line-height: 4rem;  
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: .0625rem;  
 }
 
 @mixin navtext-dt {
@@ -76,78 +77,64 @@ background: -webkit-linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%)
 
 h1, h2, h3, h4, h5, h6{
     font-family: "futura_bold";
+
 }
 
 a{
+    text-decoration: none;
     font-family: "futura_bold";
 }
 
+
 // Layout Styles
-.hero_container{
-    width: 100%;
-}
 
-.features_container{
-    width: 100%;
-}
-
-.integration_container{
-    width: 100%;
-}
-
-.footer_container{
-    width: 100%;
-}
 
 // Element Styles
-.hero_container{
-    .nav_container{
+
+.nav_container{
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2.8125rem .9375rem;
+        padding: 2.5rem 1rem;
 
-        .logo{
-            width: 10rem;
-        }
+        .nav-left{
+            display: flex;
+            align-items: center;
 
-        .hamburger{
-            width: 2.3125rem;
-            height: .75rem;
-        }
-    }
+            .logo{
+                width: 10rem;
+            }
+        
+        }   
 
-    .hero_container__background{
-        width: 100%;
-        margin: 5rem 0rem;
-        z-index: 0;
+}
 
-        img{
-            width: 100%;
-            height: 60vh;
-        }
-    }
+.hero_container{
+    background: #ffffff
+    url("./images/backgrounds/hero-bg-texture.png") no-repeat
+    center;
+    background-size: 100% 100%;
+    margin: 2rem 0rem;
 
     .hero__h1{
-        position: absolute;
-        z-index: 10;
-        top: 10rem;
-        left: 1rem;
         width: 35%;
         color: $fontcolor-primary;
+        padding: 1rem;
     }
 
     .hero_container__card{
-        position: absolute;
-        top: 20rem;
         width: 100%;
+        height: 70%;
+    
         .hero__card{
             width: 100%;
-            z-index: 10;
-            padding: .9375rem;
+            padding: 1rem 1rem 3rem 1rem;
         }
+        
     }
 }
+
 
 .features_container{
     width: 100%;
@@ -189,7 +176,7 @@ a{
     .integration-container__h1{
         @include headertext();
         @include color-gradient();
-        margin: 0rem 0rem 3rem 2rem;
+        margin: 0rem 3.5rem 3rem 2rem;
     }
     .integration-container__img{
         display: grid;
@@ -227,13 +214,7 @@ a{
     flex-direction: column;
     z-index: 0;
 
-    .footer__background{
-        position: absolute;
-        bottom: 0;
-        z-index: 2;
-        height: 25rem;
-        width: 100%;
-    }
+    
 
     .footer__h1{
         @include headertext();
@@ -244,22 +225,35 @@ a{
     }
     
     .footer__form{
-            display: flex;
-            justify-content: center;
-            z-index: 5;
-            input{
-                border-radius: 2.15625rem;
-                padding: 0.5rem 4.875rem 0.5rem 0.75rem;
-                margin: .25rem;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+        .footer__email{
+            background-color: #A780FF;
+            mix-blend-mode: normal;
+            opacity: 0.4;
+            border-radius: 2.15625rem;
+            border: none;
+            padding: 0.5rem 4.875rem 0.5rem 0.75rem;
+            margin: .25rem;
+            font-family: "futura_bold";
+                &::placeholder{
+                    color: $fontcolor-secondary;
+                }
             }
-            .footer__button{
-                background: $fontcolor-secondary;
-                border-radius: 2.15625rem;
-                padding: .5rem 1rem;
-                margin: .25rem;
-                
+        .footer__submit{
+            background-color: $fontcolor-secondary;
+            border-radius: 2.15625rem;
+            border: none;
+            padding: .5rem 1rem;
+            margin: .25rem;
+            font-family: "futura_bold";
+            .submit__text{
+                @include color-gradient(); 
             }
         }
+    }
+
    
     .footerlinks-container{
         display: flex;
@@ -271,9 +265,119 @@ a{
             text-decoration: none;
             @include footertext();
             margin: .25rem 0rem;
+            font-family: "futura_bold";
         }
     }
 
-    
+    .footer__background{
+        position: absolute;
+        bottom: 10;
+        z-index: 2;
+        height: 25rem;
+        width: 100%;
+    }
 }
 
+.dsk{
+    display: none;
+}
+
+.dsk{
+    display: none;
+}
+
+// Device = Laptops, Desktops
+@media only screen and(min-width: 1025px){
+    h1{
+        @include headertext-dt();
+    }
+    .dsk{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+        .nav_container{
+            padding: 3.125rem 8.125rem;
+            .nav-right{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 50%;
+
+                .hamburger{
+                    width: 2.3125rem;
+                    height: .75rem;
+                }
+
+                .features__link, .integration__link{
+                    color: $fontcolor-primary;
+                    padding: 0rem 1rem;
+
+                    &:visited{
+                        color: $fontcolor-primary;
+                    }
+
+                    &:hover{
+                        @include color-gradient()
+                    }
+                }
+
+                .cta__button{
+                    padding: .75rem 1rem;
+                    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.24); 
+                    border-radius: 6.25rem;
+                    background: $color-gradient;
+                    color: $fontcolor-secondary;
+                    width: 10rem;
+                    text-align: center;
+
+                    &:visited{
+                        background: $color-gradient;
+                    }
+
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+            
+        }
+
+.hero_container{
+
+        .hero__h1{
+            @include headertext-dt();
+            padding: 3.125rem 8.125rem;
+            width: 100%;
+        }   
+
+        .hero_container__card{
+            padding: 6rem 15rem 15rem 15rem;
+            top: 22rem;
+            
+        }
+    }
+    .features_container{
+
+        h1{
+            @include headertext-dt()
+        }    
+    }
+
+    .integration_container{
+
+        h1{
+            @include headertext-dt()
+        }   
+    }
+    
+    .footer_container{
+
+        h1{
+            @include headertext-dt()
+        }   
+    }
+}
