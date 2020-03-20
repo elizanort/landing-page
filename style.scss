@@ -112,8 +112,7 @@ a{
 
 .hero_container{
     background: #ffffff
-    url("./images/backgrounds/hero-bg-cards.png") no-repeat
-    center, url("./images/backgrounds/hero-bg-texture.png") no-repeat
+    url("./images/backgrounds/hero-bg-texture.png") no-repeat
     center;
     background-size: 100% 100%;
     margin: 2rem 0rem;
@@ -351,6 +350,11 @@ a{
 
 .hero_container{
     padding: 0% 10%;
+    background: #ffffff
+    url("./images/backgrounds/bg.png") no-repeat
+    center;
+    background-size: 100% 100%;
+    margin: 2rem 0rem;
         .hero__h1{
             @include headertext-dt();
             width: 100%;
