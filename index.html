@@ -30,7 +30,7 @@
         />
       </div>
     </section>
-    
+
     <section class="hero_container">
       <div class="hero__h1">
         <h1>All your communication.</h1>
@@ -49,38 +49,41 @@
     <section class="features_container" id="features">
       <h1 class="features__h1">The features that matter</h1>
 
-      <div class="features__card card1">
-        <h2 class="features-card__h2">
-          Mark all of your completed threads in one place
-        </h2>
-        <img
-          src="./images/features/features-checkboxes.png"
-          class=".features-card__img"
-          alt=""
-        />
+      <div class="features-card_container">
+        <div class="features__card card1">
+          <h2 class="features-card__h2">
+            Mark all of your completed threads in one place
+          </h2>
+          <img
+            src="./images/features/features-checkboxes.png"
+            class=".features-card__img"
+            alt=""
+          />
+        </div>
+
+        <div class="features__card card2">
+          <h2 class="features-card__h2">
+            Integrate all your communication platforms
+          </h2>
+          <img
+            src="./images/features/features-integrations.png"
+            class=".features-card__img"
+            alt=""
+          />
+        </div>
+
+        <div class="features__card card3">
+          <h2 class="features-card__h2">
+            See all your notifications in one place
+          </h2>
+          <img
+            src="./images/features/features-notifications.png"
+            class=".features-card__img"
+            alt=""
+          />
+        </div>
       </div>
 
-      <div class="features__card card2">
-        <h2 class="features-card__h2">
-          Integrate all your communication platforms
-        </h2>
-        <img
-          src="./images/features/features-integrations.png"
-          class=".features-card__img"
-          alt=""
-        />
-      </div>
-
-      <div class="features__card card3">
-        <h2 class="features-card__h2">
-          See all your notifications in one place
-        </h2>
-        <img
-          src="./images/features/features-notifications.png"
-          class=".features-card__img"
-          alt=""
-        />
-      </div>
       <div class="features__img-container">
         <img
           src="./images/features/zenith-dasboard.png"
@@ -124,28 +127,54 @@
     </section>
 
     <footer class="footer_container">
-      <h1 class="footer__h1">Stay up to date</h1>
-      <form action="" class="footer__form">
-        <input type="email" placeholder="Email address" class="footer__email" />
-        <button type="submit" class="footer__submit">
-          <span class="submit__text">DOWNLOAD</span>
-        </button>
-      </form>
+      <img src="./images/footer/down-arrow.png" class="arrow-icon" alt="icon arrow" />
+      <div class="form_container">
+        <h1 class="footer__h1">Stay up to date</h1>
 
+        <form action="" class="footer__form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="dsk footer__input"
+          />
+          <input
+            type="text"
+            name="email_address"
+            placeholder="Email address"
+            class="footer__input"
+          />
+          <select name="dropdown" class="dsk footer__input" id="">
+            <option value="null" disabled selected class="option__text">
+              Where did you hear about us?</option
+            >
+            <option value="in_store_kiosk" class="option__text"
+              >In-Store Kiosk</option
+            >
+            <option value="conference" class="option__text"
+              >Trade Conference</option
+            >
+            <option value="publication" class="option__text"
+              >Magazine/Newspaper</option
+            >
+            <option value="sm_advert" class="option__text">Social Media</option>
+            <option value="elsewhere" class="option__text">Elsewhere</option>
+          </select>
+
+          <button type="submit" class="mobile footer__submit">
+            <span class="submit__text">DOWNLOAD</span>
+          </button>
+
+          <button type="submit" class="dsk footer__submit submit_btn">
+            <span class="submit__text">SIGN UP</span>
+          </button>
+        </form>
+      </div>
       <div class="footerlinks-container">
         <a href="#" class="footer__link">CONTACT</a>
         <a href="#" class="footer__link">OUR TEAM</a>
         <a href="#" class="footer__link">POLICIES</a>
         <a href="#" class="footer__link">PRIVACY & TERMS</a>
-      </div>
-
-      <div class="footerbackground-container">
-        <img
-          src="./images/backgrounds/footer-bg-texture.png"
-          class="footer__background"
-          alt=""
-          srcset=""
-        />
       </div>
     </footer>
   </body>
